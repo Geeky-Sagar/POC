@@ -1,0 +1,149 @@
+﻿@model PaytmIntegration.Models.RequestData
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="~/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Style.css">
+    <script src="~/bootstrap.min.js"></script>
+    <script src="~/jquery-3.2.1.min.js"></script>
+    <script src="~/common.js"></script>
+</head>
+<body>
+    <div>
+        <div class="container cta-100">
+            <div style="margin-left: 200px;">
+                <div class="col-md-4 col-xs-12 col-sm-2 form-group form-inline">
+                    <label>Mobile No:</label> <input id="mobile" type="text" class="form-control" placeholder="Mobile No." required="required">
+                </div>
+                <div class="col-md-6 col-xs-12 col-sm-2 form-group form-inline">
+                    <label>Email:</label> <input style="width: 300px;" id="email" type="text" class="form-control" placeholder="Email" required="required">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row blog">
+                    <div class="col-md-12">
+                        <div id="blogCarousel" class="carousel slide container-blog" data-ride="carousel">
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="item-box-blog">
+                                                <div class="item-box-blog-image">
+                                                    <!--Date-->
+                                                    <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Basic</span> </div>
+                                                    <!--Image-->
+                                                    <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                                                </div>
+                                                <div class="item-box-blog-body">
+                                                    <!--Heading-->
+                                                    <div class="item-box-blog-heading">
+                                                        <a href="#" tabindex="0">
+                                                            <h5>&#8377; 500 per month</h5>
+                                                        </a>
+                                                    </div>
+                                                    <!--Data-->
+                                                    <div class="item-box-blog-data" style="padding: px 15px;">
+                                                        <p><i class="fa fa-user-o"></i> Features</p>
+                                                    </div>
+                                                    <!--Text-->
+                                                    <div class="item-box-blog-text">
+                                                        <p>feature 1</p>
+                                                        <p>feature 2</p>
+                                                        <p>feature 3</p>
+                                                    </div>
+                                                    <div class="mt">
+                                                        <input type="button" class="btn bg-blue-ui white read btnCheckout" value="Checkout" id="buttonId1" data-subscription-type="basic" />
+                                                        @*<a href="#" tabindex="0" class="btn bg-blue-ui white read">Checkout</a>*@
+                                                    </div>
+                                                    <!--Read More Button-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="item-box-blog">
+                                                <div class="item-box-blog-image">
+                                                    <!--Date-->
+                                                    <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Premium</span> </div>
+                                                    <!--Image-->
+                                                    <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                                                </div>
+                                                <div class="item-box-blog-body">
+                                                    <!--Heading-->
+                                                    <div class="item-box-blog-heading">
+                                                        <a href="#" tabindex="0">
+                                                            <h5>&#8377; 1000 per month</h5>
+                                                        </a>
+                                                    </div>
+                                                    <!--Data-->
+                                                    <div class="item-box-blog-data" style="padding: px 15px;">
+                                                        <p><i class="fa fa-user-o"></i>Features</p>
+                                                    </div>
+                                                    <!--Text-->
+                                                    <div class="item-box-blog-text">
+                                                        <p>feature 1</p>
+                                                        <p>feature 2</p>
+                                                        <p>feature 3</p>
+                                                    </div>
+                                                    <div class="mt">
+                                                        <input type="button" class="btn bg-blue-ui white read btnCheckout" value="Checkout" id="buttonId2" data-subscription-type="premium" />
+                                                        @*<a href="#" tabindex="0" class="btn bg-blue-ui white read">Checkout</a>*@
+                                                    </div>
+                                                    <!--Read More Button-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="item-box-blog">
+                                                <div class="item-box-blog-image">
+                                                    <!--Date-->
+                                                    <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Pro</span> </div>
+                                                    <!--Image-->
+                                                    <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                                                </div>
+                                                <div class="item-box-blog-body">
+                                                    <!--Heading-->
+                                                    <div class="item-box-blog-heading">
+                                                        <a href="#" tabindex="0">
+                                                            <h5>&#8377; 1500 per month</h5>
+                                                        </a>
+                                                    </div>
+                                                    <!--Data-->
+                                                    <div class="item-box-blog-data" style="padding: px 15px;">
+                                                        <p><i class="fa fa-user-o"></i>Features</p>
+                                                    </div>
+                                                    <!--Text-->
+                                                    <div class="item-box-blog-text">
+                                                        <p>feature 1</p>
+                                                        <p>feature 2</p>
+                                                        <p>feature 3</p>
+                                                    </div>
+                                                    <div class="mt">
+                                                        <input type="button" class="btn bg-blue-ui white read btnCheckout" value="Checkout" id="buttonId3" data-subscription-type="pro" />
+                                                        @*<a href="#" tabindex="0" class="btn bg-blue-ui white read">Checkout</a>*@
+                                                    </div>
+                                                    <!--Read More Button-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--.row-->
+                                </div>
+                            </div>
+                            <!--.carousel-inner-->
+                        </div>
+                        <!--.Carousel-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
